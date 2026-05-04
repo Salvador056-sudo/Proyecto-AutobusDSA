@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
       return;
     }
     try {
-      final url = Uri.parse('https://servidor-appbus.onrender.com/login');
+      final url = Uri.parse('http://104.237.153.30:3000/login');
 
       print("Intentando conectar a: $url");
 
@@ -205,7 +205,7 @@ class RegisterPage extends StatelessWidget {
       return;
     }
     try {
-      final url = Uri.parse('https://servidor-appbus.onrender.com/register');
+      final url = Uri.parse('http://104.237.153.30:3000/registro');
 
       final response = await http.post(
         url,

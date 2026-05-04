@@ -28,7 +28,7 @@ class _MapaPageState extends State<MapaPage> {
 
   Future<void> obtenerUbicaciones() async {
     try {
-      final url = Uri.parse('https://servidor-appbus.onrender.com/ubicaciones');
+      final url = Uri.parse('http://104.237.153.30:3000/ubicaciones');
 
       final response = await http.get(url);
       final data = jsonDecode(response.body);
